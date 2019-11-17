@@ -195,7 +195,10 @@ __mod_name__ = "Muting"
 MUTE_HANDLER = CommandHandler("mute", mute, pass_args=True, filters=Filters.group)
 UNMUTE_HANDLER = CommandHandler("unmute", unmute, pass_args=True, filters=Filters.group)
 TEMPMUTE_HANDLER = CommandHandler(["tmute", "tempmute"], temp_mute, pass_args=True, filters=Filters.group)
+VODSE_HANDLER = CommandHandler(["vodse", "tempmute"], temp_mute, pass_args=True, filters=Filters.group)
 
 dispatcher.add_handler(MUTE_HANDLER)
 dispatcher.add_handler(UNMUTE_HANDLER)
 dispatcher.add_handler(TEMPMUTE_HANDLER)
+dispatcher.add_handler(VODSE_HANDLER)
+
