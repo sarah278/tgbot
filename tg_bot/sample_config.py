@@ -15,7 +15,7 @@ class Config(object):
     OWNER_USERNAME = "YOUR USERNAME HERE"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'sqldbtype://username:pw@hostname:port/db_name'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'postgresql://username:pw@hostname:port/db_name'  # needed for any database modules
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
     LOAD = []
     # sed has been disabled after the discovery that certain long-running sed commands maxed out cpu usage
@@ -34,7 +34,7 @@ class Config(object):
     DEL_CMDS = False  # Whether or not you should delete "blue text must click" commands
     STRICT_GBAN = False
     WORKERS = 8  # Number of subthreads to use. This is the recommended amount - see for yourself what works best!
-    BAN_STICKER = 'CAADAgADOwADPPEcAXkko5EB3YGYAg'  # banhammer marie sticker
+    BAN_STICKER = 'CAADAgADjwUAAvoLtgjuZ9jAM-BAtxYE'
     ALLOW_EXCL = False  # Allow ! commands as well as /
 
 
